@@ -6,5 +6,6 @@
   "trailingComma": "all",
   "bracketSpacing": true,
   "semi": true,
-  "endOfLine": "lf"
+  "endOfLine": "lf",
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
