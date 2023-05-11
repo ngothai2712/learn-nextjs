@@ -1,5 +1,5 @@
 import { useTheme } from 'next-themes';
-import React, { useState } from 'react';
+import { useState, SyntheticEvent } from 'react';
 
 import styles from '@/styles/Login.module.scss';
 
@@ -8,9 +8,9 @@ type LoginProps = {};
 const Login = (props: LoginProps) => {
   const { theme, setTheme } = useTheme();
 
-  const onSubmit = (e: React.SyntheticEvent) => {
+  const onSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
-    console.log(password);
+    console.log({ email, password });
   };
 
   const [email, setEmail] = useState('');
